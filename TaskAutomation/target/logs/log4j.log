@@ -1,0 +1,710 @@
+[INFO ] 2023-03-23 20:47:04.077 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                                     Powered by SHAFT Engine v7.1.20230130                                                     
+------------------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2023-03-23 20:47:05.732 [main] ReportManager - Loaded OpenCV "opencv_java460".
+[INFO ] 2023-03-23 20:47:05.733 [main] ReportManager - Initializing Allure Reporting Environment...
+[INFO ] 2023-03-23 20:47:06.095 [main] ReportManager - Initializing Extent Reporting Environment...
+[INFO ] 2023-03-23 20:47:08.183 [main] Utils - [TestNG] Running:
+  C:\Users\VISTA FOUNDATION\AppData\Local\JetBrains\IdeaIC2022.2\temp-testng-customsuite.xml
+
+[INFO ] 2023-03-23 20:47:08.254 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                           Starting execution of setup driver configuration method
+'TestPackage.LoginTC.SetupDriver'                           
+------------------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2023-03-23 20:47:08.356 [main] ReportManager - Setting "targetOperatingSystem" property with "Windows-64".
+[INFO ] 2023-03-23 20:47:08.360 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/downloadedFiles/"".
+[INFO ] 2023-03-23 20:47:08.382 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "src/test/resources/testDataFiles/target/downloadedFiles/"".
+[INFO ] 2023-03-23 20:47:08.447 [main] ReportManager - Attempting to run locally on: "Windows-64 | Google chrome".
+[INFO ] 2023-03-23 20:47:08.448 [main] ReportManager - Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time...
+[DEBUG] 2023-03-23 20:47:10.161 [main] ResolutionCache - Resolution chrome=111 in cache (valid until 21:36:13 23/03/2023 EET)
+[DEBUG] 2023-03-23 20:47:10.164 [main] ResolutionCache - Resolution chrome111=111.0.5563.64 in cache (valid until 21:00:02 23/03/2023 EET)
+[INFO ] 2023-03-23 20:47:10.167 [main] WebDriverManager - Using chromedriver 111.0.5563.64 (resolved driver for Chrome 111)
+[DEBUG] 2023-03-23 20:47:10.192 [main] WebDriverManager - Driver chromedriver 111.0.5563.64 found in cache
+[INFO ] 2023-03-23 20:47:10.194 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\VISTA FOUNDATION\.cache\selenium\chromedriver\win32\111.0.5563.64\chromedriver.exe
+[ERROR] 2023-03-23 20:47:12.811 [Exec Stream Pumper] ReportManager - Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 57437
+[ERROR] 2023-03-23 20:47:12.812 [Exec Stream Pumper] ReportManager - Only local connections are allowed.
+[ERROR] 2023-03-23 20:47:12.812 [Exec Stream Pumper] ReportManager - Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[ERROR] 2023-03-23 20:47:12.857 [Exec Stream Pumper] ReportManager - ChromeDriver was started successfully.
+[INFO ] 2023-03-23 20:47:17.126 [main] ReportManager - Successfully Opened: "Windows-64 | Google chrome".
+[INFO ] 2023-03-23 20:47:17.148 [main] ReportManager - Target URL: "https://staging.mazaady.com/login"
+[INFO ] 2023-03-23 20:47:17.485 [main] ReportManager - Initial URL: "data:,"
+[ERROR] 2023-03-23 20:47:18.674 [Exec Stream Pumper] ReportManager - 䵡[1679597238.675][WARNING]: Processing messages while being disconnected
+[ERROR] 2023-03-23 20:47:26.455 [main] ReportManager - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd73be0d90cfe48c76b2ec86b52569d4, executeCdpCommand {cmd=Page.getLayoutMetrics, params={}}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.66, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VISTAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62159}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62159/devtoo..., se:cdpVersion: 111.0.5563.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd73be0d90cfe48c76b2ec86b52569d4
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:40)
+ org.openqa.selenium.chromium.AddHasCdp$1.executeCdpCommand(AddHasCdp.java:58)
+ org.openqa.selenium.chromium.ChromiumDriver.executeCdpCommand(ChromiumDriver.java:212)
+ io.github.shafthq.shaft.gui.image.ScreenshotHelper.makeFullScreenshot(ScreenshotHelper.java:41)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:244)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:240)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:40)
+ org.openqa.selenium.chromium.AddHasCdp$1.executeCdpCommand(AddHasCdp.java:58)
+ org.openqa.selenium.chromium.ChromiumDriver.executeCdpCommand(ChromiumDriver.java:212)
+ io.github.shafthq.shaft.gui.image.ScreenshotHelper.makeFullScreenshot(ScreenshotHelper.java:41)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:244)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+ java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:236)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:40)
+ org.openqa.selenium.chromium.AddHasCdp$1.executeCdpCommand(AddHasCdp.java:58)
+ org.openqa.selenium.chromium.ChromiumDriver.executeCdpCommand(ChromiumDriver.java:212)
+ io.github.shafthq.shaft.gui.image.ScreenshotHelper.makeFullScreenshot(ScreenshotHelper.java:41)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:244)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+
+Caused by: java.nio.channels.ClosedChannelException: null
+ java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
+ java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
+ java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+ java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 2023-03-23 20:47:26.911 [main] ReportManager - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd73be0d90cfe48c76b2ec86b52569d4, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.66, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VISTAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62159}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62159/devtoo..., se:cdpVersion: 111.0.5563.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd73be0d90cfe48c76b2ec86b52569d4
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:248)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:240)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:248)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+ java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:236)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeFullPageScreenshot(ScreenshotManager.java:248)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:418)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+
+Caused by: java.nio.channels.ClosedChannelException: null
+ java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
+ java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
+ java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+ java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 2023-03-23 20:47:26.933 [main] ReportManager - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd73be0d90cfe48c76b2ec86b52569d4, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.66, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VISTAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62159}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62159/devtoo..., se:cdpVersion: 111.0.5563.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd73be0d90cfe48c76b2ec86b52569d4
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:426)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:422)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:240)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:426)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:422)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573)
+ java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123)
+ org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:236)
+ org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+ org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+ org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:318)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:426)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.takeScreenshot(ScreenshotManager.java:422)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.internalCaptureScreenShot(ScreenshotManager.java:364)
+ io.github.shafthq.shaft.gui.image.ScreenshotManager.captureScreenShot(ScreenshotManager.java:112)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.reportActionResult(BrowserActionsHelpers.java:100)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:60)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.failAction(BrowserActionsHelpers.java:55)
+ io.github.shafthq.shaft.gui.browser.BrowserActionsHelpers.navigateToNewURL(BrowserActionsHelpers.java:134)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:272)
+ com.shaft.gui.browser.BrowserActions.navigateToURL(BrowserActions.java:213)
+ io.github.shafthq.shaft.gui.browser.FluentBrowserActions.navigateToURL(FluentBrowserActions.java:108)
+ TestPackage.TestBase.SetupDriver(TestBase.java:17)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base/java.lang.reflect.Method.invoke(Method.java:568)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+ org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+ org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+ org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+ org.testng.SuiteRunner.run(SuiteRunner.java:330)
+ org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+ org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+ org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+ org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+ org.testng.TestNG.runSuites(TestNG.java:1099)
+ org.testng.TestNG.run(TestNG.java:1067)
+ com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+ com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+
+Caused by: java.net.ConnectException: null
+ java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+
+Caused by: java.nio.channels.ClosedChannelException: null
+ java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195)
+ java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760)
+ java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+ java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230)
+ java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206)
+ java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+ java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+ java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+ java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 2023-03-23 20:47:27.054 [main] ReportManager - Successfully created attachment 'Browser Action Exception - Navigate to new url - Stacktrace'
+[ERROR] 2023-03-23 20:47:27.328 [main] AllureLifecycle - Could not update test container: container with uuid 7af65b44-520a-4e43-9242-e5252d08ff21 not found
+[INFO ] 2023-03-23 20:47:29.997 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+       Starting execution of suite setup configuration method
+'io.github.shafthq.shaft.listeners.helpers.ConfigurationHelper.suiteSetup'       
+------------------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2023-03-23 20:47:30.002 [main] ReportManager - Initializing Important Links...
+[INFO ] 2023-03-23 20:47:30.004 [main] ReportManager - Initializing Properties...
+[INFO ] 2023-03-23 20:47:30.194 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+         Starting Execution: '1 out of 1' test cases in the current suite
+Test Method: 'TestPackage.LoginTC.loginWithValidCredentials'         
+------------------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2023-03-23 20:47:30.282 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Current Method log: loginWithValidCredentials'
+[INFO ] 2023-03-23 20:47:30.342 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+    Starting execution of suite teardown configuration method
+'io.github.shafthq.shaft.listeners.helpers.ConfigurationHelper.suiteTeardown'    
+------------------------------------------------------------------------------------------------------------------------------------------------
+[INFO ] 2023-03-23 20:47:30.344 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log'
+[INFO ] 2023-03-23 20:47:30.347 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "target/logs/log4j.log"".
+[INFO ] 2023-03-23 20:47:30.348 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "target/logs/log4j.log"".
+[INFO ] 2023-03-23 20:47:30.350 [main] ReportManager - File Action "ReadFileAsByteArray" successfully performed. With the following test data "File Path: "D:\Task\TaskAutomation\target\logs\log4j.log"".
+[INFO ] 2023-03-23 20:47:30.351 [main] ReportManager - File Action "DeleteFile" successfully performed. With the following test data "Target File Path: "target/logs/log4j.log"".
+[INFO ] 2023-03-23 20:47:30.377 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Execution log: 20230323-204730'
+[DEBUG] 2023-03-23 20:47:30.585 [main] cache - Couldn't find template in cache for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:30.589 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:30.593 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:30.594 [main] cache - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
+[DEBUG] 2023-03-23 20:47:30.595 [main] cache - Loading template for "spark/spark.spa.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/spark.spa.ftl"
+[DEBUG] 2023-03-23 20:47:31.113 [main] cache - Couldn't find template in cache for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.114 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.115 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.115 [main] cache - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.115 [main] cache - Loading template for "commons/commons-variables.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-variables.ftl"
+[DEBUG] 2023-03-23 20:47:31.808 [main] cache - Couldn't find template in cache for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.809 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.810 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.812 [main] cache - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.813 [main] cache - Loading template for "commons/commons-macros.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-macros.ftl"
+[DEBUG] 2023-03-23 20:47:31.843 [main] cache - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.844 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.844 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.845 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.845 [main] cache - Loading template for "spark/macros/attributes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attributes.ftl"
+[DEBUG] 2023-03-23 20:47:31.852 [main] cache - Couldn't find template in cache for "spark/macros/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.853 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.854 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.854 [main] cache - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.855 [main] cache - Loading template for "spark/macros/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/log.ftl"
+[DEBUG] 2023-03-23 20:47:31.860 [main] cache - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.861 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.862 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.863 [main] cache - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.863 [main] cache - Loading template for "spark/macros/recurse_nodes.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/recurse_nodes.ftl"
+[DEBUG] 2023-03-23 20:47:31.870 [main] cache - "spark/macros/log.ftl"("en_GB", UTF-8, parsed) cached copy not yet stale; using cached.
+[DEBUG] 2023-03-23 20:47:31.870 [main] cache - Couldn't find template in cache for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.870 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.871 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.872 [main] cache - TemplateLoader.findTemplateSource("spark/macros/attr-common.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.872 [main] cache - Loading template for "spark/macros/attr-common.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/macros/attr-common.ftl"
+[DEBUG] 2023-03-23 20:47:31.886 [main] cache - Couldn't find template in cache for "spark/partials/head.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.887 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.887 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.888 [main] cache - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.888 [main] cache - Loading template for "spark/partials/head.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/head.ftl"
+[DEBUG] 2023-03-23 20:47:31.894 [main] cache - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.894 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.895 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.897 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.898 [main] cache - Loading template for "commons/commons-inject-css.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-css.ftl"
+[DEBUG] 2023-03-23 20:47:31.900 [main] cache - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.901 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.901 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.902 [main] cache - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.902 [main] cache - Loading template for "spark/partials/navbar.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/navbar.ftl"
+[DEBUG] 2023-03-23 20:47:31.919 [main] cache - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.920 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.921 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.921 [main] cache - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.922 [main] cache - Loading template for "spark/partials/sidenav.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/sidenav.ftl"
+[DEBUG] 2023-03-23 20:47:31.954 [main] cache - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:31.955 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.956 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:31.956 [main] cache - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
+[DEBUG] 2023-03-23 20:47:31.956 [main] cache - Loading template for "spark/partials/dashboard.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/dashboard.ftl"
+[DEBUG] 2023-03-23 20:47:32.053 [main] cache - Couldn't find template in cache for "spark/partials/test.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.070 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.071 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.072 [main] cache - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.072 [main] cache - Loading template for "spark/partials/test.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/test.ftl"
+[DEBUG] 2023-03-23 20:47:32.090 [main] cache - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.091 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.092 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.093 [main] cache - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.093 [main] cache - Loading template for "spark/partials/standard-content.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/standard-content.ftl"
+[DEBUG] 2023-03-23 20:47:32.109 [main] cache - Couldn't find template in cache for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.110 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.111 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.112 [main] cache - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.112 [main] cache - Loading template for "spark/partials/exception.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/exception.ftl"
+[DEBUG] 2023-03-23 20:47:32.148 [main] cache - Couldn't find template in cache for "spark/partials/log.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.148 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.149 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.150 [main] cache - TemplateLoader.findTemplateSource("spark/partials/log.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.150 [main] cache - Loading template for "spark/partials/log.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/log.ftl"
+[DEBUG] 2023-03-23 20:47:32.152 [main] cache - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.153 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.153 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.154 [main] cache - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.154 [main] cache - Loading template for "spark/partials/scripts.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/spark/partials/scripts.ftl"
+[DEBUG] 2023-03-23 20:47:32.156 [main] cache - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed); will try to load it.
+[DEBUG] 2023-03-23 20:47:32.156 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_GB.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.157 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
+[DEBUG] 2023-03-23 20:47:32.157 [main] cache - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+[DEBUG] 2023-03-23 20:47:32.158 [main] cache - Loading template for "commons/commons-inject-js.ftl"("en_GB", UTF-8, parsed) from "jar:file:/C:/Users/VISTA%20FOUNDATION/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar!/com/aventstack/extentreports/templates/commons/commons-inject-js.ftl"
+[INFO ] 2023-03-23 20:47:32.168 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "extent-reports/ExtentReports_23-03-2023_20-47-06-0097-pm.html"".
+[INFO ] 2023-03-23 20:47:32.169 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "extent-reports/ExtentReports_23-03-2023_20-47-06-0097-pm.html"".
+[INFO ] 2023-03-23 20:47:32.170 [main] ReportManager - File Action "GetAbsolutePath" successfully performed. With the following test data "Relative Folder Path: "extent-reports/ExtentReports_23-03-2023_20-47-06-0097-pm.html"".
+[INFO ] 2023-03-23 20:47:32.172 [main] ReportManager - File Action "ReadFile" successfully performed. With the following test data "File Path: "D:\Task\TaskAutomation\extent-reports\ExtentReports_23-03-2023_20-47-06-0097-pm.html"".
+[INFO ] 2023-03-23 20:47:32.174 [main] ReportManager - Successfully created attachment 'HTML - Extent Emailable Execution Report'
+[INFO ] 2023-03-23 20:47:32.174 [main] ReportManager - File Action "DoesFileExist" successfully performed. With the following test data "File Path: "allure-results/cucumberReport.html"".
+[INFO ] 2023-03-23 20:47:32.185 [main] ReportManager - Successfully created attachment 'HTML - Checkpoints Report'
+[INFO ] 2023-03-23 20:47:32.194 [main] ReportManager - Successfully created attachment 'SHAFT Engine Logs - Issues log CSV: 20230323-204732'
+[INFO ] 2023-03-23 20:47:32.232 [main] ReportManager - Attempting to execute the following command locally. Command: "generate_allure_report.bat"
+[INFO ] 2023-03-23 20:47:32.327 [main] ReportManager - 
+------------------------------------------------------------------------------------------------------------------------------------------------
+                                            This test run was powered by SHAFT Engine v7.1.20230130                                            
+                                 SHAFT Engine is *and will always be* 100% FREE for commercial and private use                                 
+                                                       in compliance with the MIT license                                                       
+                                          https://github.com/ShaftHQ/SHAFT_ENGINE/blob/master/LICENSE                                          
+------------------------------------------------------------------------------------------------------------------------------------------------
+[DEBUG] 2023-03-23 20:47:32.352 [wdm-shutdown-hook] WebDriverManager - Quitting ChromeDriver: chrome on WINDOWS (fd73be0d90cfe48c76b2ec86b52569d4)
+[WARN ] 2023-03-23 20:47:32.375 [wdm-shutdown-hook] WebDriverManager - Exception closing ChromeDriver: chrome on WINDOWS (null) (Timed out waiting for driver server to stop.
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd73be0d90cfe48c76b2ec86b52569d4, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.66, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VISTAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62159}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62159/devtoo..., se:cdpVersion: 111.0.5563.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd73be0d90cfe48c76b2ec86b52569d4)
+org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd73be0d90cfe48c76b2ec86b52569d4, quit {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.66, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VISTAF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62159}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62159/devtoo..., se:cdpVersion: 111.0.5563.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 30000, script: 30000}, unhandledPromptBehavior: accept and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd73be0d90cfe48c76b2ec86b52569d4
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:132) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:445) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:279) ~[selenium-chromium-driver-4.8.0.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:966) ~[webdrivermanager-5.3.2.jar:?]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at io.github.bonigarcia.wdm.WebDriverManager.quit(WebDriverManager.java:919) ~[webdrivermanager-5.3.2.jar:?]
+	at io.github.bonigarcia.wdm.WebDriverManager$1.run(WebDriverManager.java:1837) ~[webdrivermanager-5.3.2.jar:?]
+Caused by: java.util.concurrent.ExecutionException: java.io.UncheckedIOException: java.net.ConnectException
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396) ~[?:?]
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096) ~[?:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128) ~[selenium-remote-driver-4.8.0.jar:?]
+	... 10 more
+Caused by: java.io.UncheckedIOException: java.net.ConnectException
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:240) ~[selenium-http-jdk-client-4.5.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105) ~[selenium-remote-driver-4.8.0.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.net.ConnectException
+	at jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:573) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:123) ~[java.net.http:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:236) ~[selenium-http-jdk-client-4.5.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167) ~[selenium-remote-driver-4.8.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105) ~[selenium-remote-driver-4.8.0.jar:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.net.ConnectException
+	at jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1047) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:195) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:760) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:848) ~[?:?]
+	at jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183) ~[java.net.http:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:569) ~[?:?]
+	at jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:230) ~[java.net.http:?]
+	at jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:206) ~[java.net.http:?]
+	at java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?]
+	at java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?]
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
